@@ -1,0 +1,17 @@
+/*------------------------------------*\
+    #PAGE-FOOT
+\*------------------------------------*/
+
+.page-foot {
+    @include font-size(18px);
+    font-weight: 600;
+    padding-bottom: 0;
+    background-color: $color-gray-dark;
+    color: $color-gray-light;
+    padding-bottom: $spacing-unit;
+    padding-top: $spacing-unit;
+
+    // @include media-query(desk) {
+    // }
+
+}

@@ -1,0 +1,21 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+
+.btn {
+  font-weight: 800;
+  text-transform: uppercase;
+  background-image: url(../arrow-right.png);
+  background-size: 20px 28px;
+  background-position: 5% center;
+  background-repeat: no-repeat;
+  padding-top: $spacing-unit;
+  padding-bottom: $spacing-unit;
+  text-indent: 0.5em;
+  white-space: normal;
+
+  @include media-query(desk) {
+    @include font-size(24px);
+  }
+}

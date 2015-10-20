@@ -1,0 +1,20 @@
+{
+  "name": "landing-page-templates",
+  "version": "0.0.1",
+  "description": "npm build tool",
+  "main": "index.js",
+  "author": "Sam Templeman",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^3.3.3",
+    "clean-css": "latest",
+    "livereload": "latest"
+  },
+  "scripts": {
+    "clean": "rm -r dist/css/main.css",
+    "prebuild": "npm run clean -s",
+    "build:css": "node-sass resources/scss/main.scss dist/css/main.css",
+    "watch:css": "nodemon -e scss -x 'npm run build:css'",
+    "livereload": "livereload dist/"
+  }
+}

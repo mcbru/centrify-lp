@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+  <title>Centrify Landing Page Title</title>
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,600italic,600,300"> -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700,800' rel='stylesheet' type='text/css'>
+  <link href="css/select2.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/unslider.js"></script>
+  <script src="js/select2.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      var data = ['United States', 'Canada', 'United Kingdom', 'Afghanistan', 'Åland Islands', 'Albania', 'Algeria', 'American Samoa', 'Andorra', 'Angola', 'Anguilla', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Aruba', 'Australia', 'Austria', 'Azerbaijan', 'Bangladesh', 'Barbados', 'Bahamas', 'Bahrain', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bermuda', 'Bhutan', 'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'British Indian Ocean Territory', 'British Virgin Islands', 'Brunei Darussalam', 'Bulgaria', 'Burkina Faso', 'Burma', 'Burundi', 'Cambodia', 'Cameroon', 'Cape Verde', 'Cayman Islands', 'Central African Republic', 'Chad', 'Chile', 'China', 'Christmas Island', 'Cocos (Keeling) Islands', 'Colombia', 'Comoros', 'Congo-Brazzaville', 'Congo-Kinshasa', 'Cook Islands', 'Costa Rica', '$_[', 'Croatia', 'Curaçao', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'East Timor', 'Ecuador', 'El Salvador', 'Egypt', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Ethiopia', 'Falkland Islands', 'Faroe Islands', 'Federated States of Micronesia', 'Fiji', 'Finland', 'France', 'French Guiana', 'French Polynesia', 'French Southern Lands', 'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Gibraltar', 'Greece', 'Greenland', 'Grenada', 'Guadeloupe', 'Guam', 'Guatemala', 'Guernsey', 'Guinea', 'Guinea-Bissau', 'Guyana', 'Haiti', 'Heard and McDonald Islands', 'Honduras', 'Hong Kong', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iraq', 'Ireland', 'Isle of Man', 'Israel', 'Italy', 'Jamaica', 'Japan', 'Jersey', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Macau', 'Macedonia', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Martinique', 'Mauritania', 'Mauritius', 'Mayotte', 'Mexico', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Montserrat', 'Morocco', 'Mozambique', 'Namibia', 'Nauru', 'Nepal', 'Netherlands', 'New Caledonia', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'Niue', 'Norfolk Island', 'Northern Mariana Islands', 'Norway', 'Oman', 'Pakistan', 'Palau', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Pitcairn Islands', 'Poland', 'Portugal', 'Puerto Rico', 'Qatar', 'Réunion', 'Romania', 'Russia', 'Rwanda', 'Saint Barthélemy', 'Saint Helena', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Martin', 'Saint Pierre and Miquelon', 'Saint Vincent', 'Samoa', 'San Marino', 'São Tomé and Príncipe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Sint Maarten', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia', 'South Africa', 'South Georgia', 'South Korea', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Svalbard and Jan Mayen', 'Sweden', 'Swaziland', 'Switzerland', 'Syria', 'Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tokelau', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey', 'Turkmenistan', 'Turks and Caicos Islands', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'Uruguay', 'Uzbekistan', 'Vanuatu', 'Vatican City', 'Vietnam', 'Venezuela', 'Wallis and Futuna', 'Western Sahara', 'Yemen', 'Zambia', 'Zimbabwe'];
+      $('select').select2({
+        placeholder: "Select country",
+        data: data
+      });
+      var unslider = $('.unslider').unslider({
+        delay: 9000,
+        dots: $('.dots-container'),
+        keys: false,
+        fluid: true,
+        arrows: true
+      });
+      $('.unslider-arrow').click(function(event) {
+        event.preventDefault();
+        var fn = this.className.split(' ')[1];
+
+        //  Either do unslider.data('unslider').next() or .prev() depending on the className
+        unslider.data('unslider')[fn]();
+      });
+    });
+  </script>
+</head>
+<body>
+  <header class="band">
+    <div class="wrapper">
+      <a href="https://www.centrify.com/">
+        <img src="logo.png" alt="Centrify Logo">
+      </a>
+    </div>
+  </header>
+  <div class="hero  hero--masthead">
+    <div class="wrapper">
+      <div class="layout">
+        <div class="layout__item  u-2/5  u-3/5-lap-and-up">
+          <h1 class="hero__text"><b>Managing Access</b> to SaaS Applications</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="band  band--gradient">
+    <div class="wrapper">
+      <div class="layout  layout--rev  layout--large">
+        <div class="layout__item  u-1  u-2/5-lap-and-up">
+          <div class="form">
+            <form action="" method="post">
+              <div class="form__content">
+                <div class="flag  flag--responsive  mb">
+                  <div class="flag__img">
+                    <img src="asset-thumbnail.jpg" alt="White Paper">
+                  </div>
+                  <div class="flag__body">
+                    <p><b>Register now</b> to download a copy of The Essential Guide to Managing Access to SaaS Applications.</p>
+                  </div>
+                </div>
+                <input type="text" class="required  text-input" value="" name="firstName" id="firstName" placeholder="First name">
+                <input type="text" class="required  text-input" value="" name="lastName" id="firstName" placeholder="Last name">
+                <input type="text" class="required  text-input" value="" name="title" id="title" placeholder="Job title">
+                <input type="text" class="required  text-input" value="" name="company" id="company" placeholder="Company name">
+                <input type="email" class="required  text-input" value="" name="email" id="email" placeholder="Email">
+                <input type="tel" class="required  text-input" value="" name="phone" id="phone" placeholder="Phone">
+                <select name="country" id="country">
+                  <option value>Select country</option>
+                </select>
+              </div>
+              <input type="submit" class="btn  btn--full  mb" value="Download White Paper" name="submit">
+            </form>
+          </div>
+        </div><!--
+        --><div class="layout__item  u-1  u-3/5-lap-and-up">
+          <p class="lede">Window’s IT Pro’s Sean Deuby delves into cloud based identity and access management specifically opportunities and challenges of empowering, yet controlling, user access to SaaS applications.</p>
+          <p>IT professionals are grappling with not one, but three, revolutions at the same time. First, cloud computing provides easy and dynamic access to information technology. Next, the ecosystem of cloud-based SaaS applications has exploded thanks to cloud computing. Finally, this SaaS ecosystem has helped power an even bigger boom of consumer-friendly mobile devices and apps that access Saas.</p>
+          <p><strong>With this Essential Guide you will learn:</strong></p>
+          <ul class="list--spaced">
+            <li>How identity management as a service promises to simplify secure access to and managment of SaaS applications while reducing password sprawl</li>
+            <li>How mobile computing has added to the complexity of managing access to both corporate data and SaaS</li>
+            <li>Ways to evaluate the options available on the market</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UNSLIDER -->
+  <section class="[ band  band--large  band--tint ]  mb++" data-ui-component="Quotes carousel">
+
+    <div class="unslider-wrapper">
+      <div class="unslider">
+
+        <a href="#" class="unslider-arrow prev"></a>
+        <a href="#" class="unslider-arrow next"></a>
+
+          <ul class="unslider__panes">
+
+              <li class="unslider__pane">
+                  <blockquote class="pull-quote  pull-quote--banner">
+                      <p>“With Centrify we can disable a user in Active Directory and they’ll be automatically disabled across the board. Morris will save money on licensing and significantly decrease the risk potential.”</p>
+                      <b class="pull-quote__source">
+                        <span class="caps">Russell Harlan</span>, Director of Learning at Morris Communications
+                      </b>
+                  </blockquote>
+              </li>
+
+              <li class="unslider__pane">
+                  <blockquote class="pull-quote  pull-quote--banner">
+                      <p>“With Centrify we can disable a user in Active Directory and they’ll be automatically disabled across the board. Morris will save money on licensing and significantly decrease the risk potential.”</p>
+                      <b class="pull-quote__source">
+                        <span class="caps">Russell Harlan</span>, Director of Learning at Morris Communications
+                      </b>
+                  </blockquote>
+              </li>
+
+              <li class="unslider__pane">
+                  <blockquote class="pull-quote  pull-quote--banner">
+                      <p>“With Centrify we can disable a user in Active Directory and they’ll be automatically disabled across the board. Morris will save money on licensing and significantly decrease the risk potential.”</p>
+                      <b class="pull-quote__source">
+                        <span class="caps">Russell Harlan</span>, Director of Learning at Morris Communications
+                      </b>
+                  </blockquote>
+              </li>
+
+              <li class="unslider__pane">
+                  <blockquote class="pull-quote  pull-quote--banner">
+                      <p>“With Centrify we can disable a user in Active Directory and they’ll be automatically disabled across the board. Morris will save money on licensing and significantly decrease the risk potential.”</p>
+                      <b class="pull-quote__source">
+                        <span class="caps">Russell Harlan</span>, Director of Learning at Morris Communications
+                      </b>
+                  </blockquote>
+              </li>
+
+              <li class="unslider__pane">
+                  <blockquote class="pull-quote  pull-quote--banner">
+                      <p>“With Centrify we can disable a user in Active Directory and they’ll be automatically disabled across the board. Morris will save money on licensing and significantly decrease the risk potential.”</p>
+                      <b class="pull-quote__source">
+                        <span class="caps">Russell Harlan</span>, Director of Learning at Morris Communications
+                      </b>
+                  </blockquote>
+              </li>
+
+          </ul>
+
+          <div class="dots-container">
+          </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- END UNSLIDER -->
+
+
+  <!-- 6 UP ICONS -->
+  <div class="band  band--highlight">
+    <div class="wrapper">
+        <div class="customer-stats">
+          <ul class="list-inline">
+            <li>
+              <div class="customer-stats__img">
+                <img src="world.svg" alt="world icon">
+              </div>
+              <span class="customer-stats__stat">
+                <strong class="customer-stats__number">26</strong>
+                of the
+                <span class="customer-stats__label">Fortune 50</span>
+              </span>
+            </li>
+            <li>
+              <div class="customer-stats__img">
+                <img src="beaker.svg" alt="beaker icon">
+              </div>
+              <span class="customer-stats__stat">
+                <strong class="customer-stats__number">7</strong>
+                of the
+                <span class="customer-stats__label">Top 10 Pharma Companies</span>
+              </span>
+            </li>
+            <li>
+              <div class="customer-stats__img">
+                <img src="radio-tower.svg" alt="radio tower icon">
+              </div>
+              <span class="customer-stats__stat">
+                <strong class="customer-stats__number">5</strong>
+                of the
+                <span class="customer-stats__label">Top 10 Telcos</span>
+              </span>
+            </li>
+            <li>
+              <div class="customer-stats__img">
+                <img src="buildings.svg" alt="buildings icon">
+              </div>
+              <span class="customer-stats__stat">
+                <strong class="customer-stats__number">4</strong>
+                of the
+                <span class="customer-stats__label">Top 10 Financial Institutions</span>
+              </span>
+            </li>
+            <li>
+              <div class="customer-stats__img">
+                <img src="shopping-cart.svg" alt="shopping cart icon">
+              </div>
+              <span class="customer-stats__stat">
+                <strong class="customer-stats__number">4</strong>
+                of the
+                <span class="customer-stats__label">Top 10 US Retailers</span>
+              </span>
+            </li>
+            <li>
+              <div class="customer-stats__img">
+                <img src="capital-building.svg" alt="capital building icon">
+              </div>
+              <span class="customer-stats__stat">
+                <strong class="customer-stats__number">85</strong>
+                of the
+                <span class="customer-stats__label">Federal Agencies</span>
+              </span>
+            </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  <!-- END 6 UP ICONS -->
+
+  <div class="off  band  band--highlight">
+    <div class="wrapper">
+        <div class="video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/42jO71lk_V4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <blockquote class="pull-quote">
+          <p>“With Centrify we can disable a user in Active Directory and they’ll be automatically disabled across the board. Morris will save money on licensing and significantly decrease the risk potential.”</p>
+          <b class="pull-quote__source">
+            <span class="caps">Russell Harlan</span>, Director of Learning at Morris Communications
+          </b>
+        </blockquote>
+    </div>
+  </div>
+  <footer class="page-foot">
+    <div class="wrapper">
+      <div class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">&copy;2015 Centrify Corporation. All rights reserved.</li>
+          <li class="nav__item"><a class="nav__link" href="https://www.centrify.com/Privacy/">Privacy Policy</a></li>
+          <li><a href="https://www.centrify.com/terms-of-use/">Terms of Use</a></li>
+          <li><a href="https://www.centrify.com/sitemap/">Site Map</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

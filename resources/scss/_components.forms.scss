@@ -1,0 +1,79 @@
+/*------------------------------------*\
+    #FORMS
+\*------------------------------------*/
+
+$placeholder-color: #626262;
+
+.form {
+  background-color: $color-white;
+  @include vendor(border-radius, 10px);
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(75,84,87,0.27);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(75,84,87,0.27);
+  box-shadow: 0px 0px 10px 2px rgba(75,84,87,0.27);
+  margin-bottom: double($spacing-unit);
+
+  @include media-query(lap-and-up) {
+    margin-bottom: 0;
+    margin-top: round(-3.5*($spacing-unit));
+  }
+
+}
+
+  .form__content {
+    padding: $spacing-unit--small;
+    // @include font-size(16px);
+    // @include media-query(palm) {
+    //   @include font-size(16px);
+    // }
+    // @include media-query(desk) {
+    //   @include font-size(16px);
+    // }
+  }
+
+
+.text-input,
+textarea {
+  @include font-size(16px);
+  border: 0 none;
+  background-color: $color-gray-light;
+  color: $color-black-brand;
+  padding: quarter($spacing-unit);
+  width: 100%;
+  margin-bottom: halve($spacing-unit);
+
+  @include media-query(desk) {
+    width: 49%;
+  }
+}
+
+
+
+/**
+ * Group sets of form fields in a list, e.g.:
+ *
+   <ul class=form-fields>
+       <li>
+           <label />
+           <input />
+       </li>
+       <li>
+           <label />
+           <select />
+       </li>
+       <li>
+           <label />
+           <input />
+       </li>
+   </ul>
+ *
+ */
+.form-fields{
+    list-style:none;
+    margin:0;
+}
+    .form-fields > li{
+        @extend %margin-bottom;
+    }
+    .form-fields > li:last-child{
+        margin-bottom:0;
+    }

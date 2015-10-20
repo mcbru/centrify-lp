@@ -1,0 +1,87 @@
+/*------------------------------------*\
+    #CAROUSEL
+\*------------------------------------*/
+
+.unslider {
+    position: static !important;
+}
+
+.unslider-wrapper {
+    position: relative;
+}
+
+    .unslider__panes {
+        margin:  0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        display: table;
+        width: 500%;
+        overflow: hidden;
+    }
+
+        .unslider__pane {
+            position: relative;
+            display: table-cell;
+            vertical-align: middle;
+            width: 20%; /* 100 / number of panes */
+            border-top: 2px solid $color-gray-dark;
+            border-bottom: 2px solid $color-gray-dark;
+        }
+
+.unslider .dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -55px;
+    margin: 0 auto;
+}
+
+.dots-container {
+  width: 100%;
+  text-align: center;
+}
+
+.unslider .dots li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 4px;
+    text-indent: -999em;
+    border: 5px solid $color-orange;
+    border-radius: 15px;
+    cursor: pointer;
+    opacity: .4;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+}
+
+.unslider .dots li.active {
+    background: $color-orange;
+    opacity: 1;
+}
+
+.unslider-arrow {
+  display: none;
+
+  @include media-query(lap-and-up) {
+    display: block;
+    text-decoration: none;
+    position: absolute;
+    min-width: 31px;
+    height: 100%;
+    cursor: pointer;
+    z-index: 10;
+  }
+}
+
+.unslider-arrow.prev {
+  background: url(../arrow-prev.png) no-repeat center center;
+  left: 0;
+}
+
+.unslider-arrow.next {
+  background: url(../arrow-next.png) no-repeat center center;
+  right: 0;
+}

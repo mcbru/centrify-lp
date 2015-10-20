@@ -1,0 +1,33 @@
+/*------------------------------------*\
+    #BANDS
+\*------------------------------------*/
+
+.band {
+    padding-top:    $spacing-unit;
+    padding-bottom: $spacing-unit;
+
+    @include media-query(desk) {
+        padding-top:    $spacing-unit--large;
+        padding-bottom: $spacing-unit--large;
+    }
+
+}
+
+.band--large {
+    padding: $spacing-unit--large;
+}
+
+.band--highlight {
+    background-color: $color-blue;
+    color: $color-white;
+}
+
+.band--gradient {
+    background: $color-white;
+    // background: -moz-radial-gradient(at top right, ellipse cover, rgba(155,197,207,1) 0%, rgba(155,197,207,0) 35%, rgba(155,197,207,0) 100%);
+    // background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(155,197,207,1)), color-stop(35%, rgba(155,197,207,0)), color-stop(100%, rgba(155,197,207,0)));
+    // background: -webkit-radial-gradient(at top right, ellipse cover, rgba(155,197,207,1) 0%, rgba(155,197,207,0) 35%, rgba(155,197,207,0) 100%);
+    // background: -o-radial-gradient(at top right, ellipse cover, rgba(155,197,207,1) 0%, rgba(155,197,207,0) 35%, rgba(155,197,207,0) 100%);
+    // background: -ms-radial-gradient(at top right, ellipse cover, rgba(155,197,207,1) 0%, rgba(155,197,207,0) 35%, rgba(155,197,207,0) 100%);
+    background: radial-gradient(ellipse at top right, rgba(155,197,207,1) 0%, rgba(155,197,207,0) 50%, rgba(155,197,207,0) 100%);
+}
